@@ -128,7 +128,7 @@ class GeneticAlgorithm:
 
             if np.random.rand() < self.crossover_rate:
                 for j in range(self.dim):
-                    # Continue if the genes are indentical
+                    # Continue if the genes are identical
                     if abs(p1[j] - p2[j]) < 1e-14:
                         continue
 
