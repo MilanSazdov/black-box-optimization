@@ -152,7 +152,7 @@ The typical behavior of the algorithm is shown in the convergence and diversity 
 ![Convergence Plot](assets/ga_result.png)
 *Figure 1: A convergence plot showing the best and average fitness per generation.*
 
-![Diversity Plot](assets/diversity.png)
+![Diversity Plot](assets/ga_diversity.png)
 *Figure 2: A plot showing population diversity (measured by standard deviation) over generations.*
 
 ## Conclusion
