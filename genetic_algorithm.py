@@ -101,7 +101,7 @@ class GeneticAlgorithm:
         elite_indices = np.argsort(fitness_scores)[-self.elitism_count:]
         elites = self.population[elite_indices]
 
-        # Tournament selcetion for the rest of population
+        # Tournament selection for the rest of population
         parents = []
         num_parents_to_select = self.pop_size - self.elitism_count
         for _ in range(num_parents_to_select):
