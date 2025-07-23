@@ -227,7 +227,7 @@ class GeneticAlgorithm:
                       f"Average fitness: {avg_objective:.6f} | "
                       f"Diversity: {diversity:.6f}")
 
-            # 3. Check the criterium for stoping
+            # 3. Check the criterion for stopping
             if stagnation_counter >= self.stagnation_limit:
                 print(f"\nTermination due to stagnation after {generation + 1} generations.")
                 break
