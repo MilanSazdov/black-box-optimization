@@ -52,7 +52,7 @@ This implementation aims to effectively balance **exploration** of the vast sear
 - [License](LICENSE)
 - [Code of Conduct](CODE_OF_CONDUCT.md)
 
-## 🛠️ Requirements & Installation
+## 🔧 Requirements & Installation
 
 The project requires Python 3 and the following libraries:
 - `numpy`
@@ -63,7 +63,7 @@ You can install them using pip:
 python -m pip install numpy matplotlib
 ```
 
-## ▶️ How to Run
+## ⏩ How to Run
 
 To run the optimization process, simply execute the main script from your terminal:
 ```bash
@@ -71,7 +71,7 @@ python genetic_algorithm.py
 ```
 The script will print the progress to the console and display the result plots upon completion.
 
-## 🏗️ Algorithm Architecture and Implementation Details
+## 📑 Algorithm Architecture and Implementation Details
 
 ### Individual Representation
 An individual in the GA represents a potential solution to the problem, i.e., a specific vector **w**. It is implemented as a 60-element NumPy array, where each element (gene) is a real number corresponding to a dimension of the input vector.
@@ -146,7 +146,7 @@ The entire process revolves around calculating the perturbation factor $δ_q$. B
 
 Finally, after the new value $y'$ is calculated, a check is performed using `numpy.clip` to ensure the value remains strictly within its defined bounds.
 
-## 🎛️ Hyperparameter Tuning
+## 📜 Hyperparameter Tuning
 
 The algorithm's parameters were empirically tuned to achieve a robust balance between exploration and exploitation for this specific problem.
 
@@ -162,7 +162,7 @@ The algorithm's parameters were empirically tuned to achieve a robust balance be
 | `elitism_count` | 3 | Preserves the 3 best-found solutions in each generation. |
 | `stagnation_limit` | 15 | An early stopping criterion to save computational resources if no improvement is found. |
 
-## 📊 Results and Convergence
+## 📈 Results and Convergence
 
 The algorithm was run multiple times to test for consistency. The results demonstrate high robustness, with the final objective value consistently converging to a narrow range between **0.024** and **0.031**. The best solution found across all test runs was **$f_{min}(w) = 0.02396133$**. This consistency suggests that the algorithm reliably finds the same high-quality region of the search space.
 
@@ -180,6 +180,6 @@ The implemented Genetic Algorithm proved to be a successful and efficient method
 
 ## 📬 Contact
 
-- GitHub: [MilanSazdov](https://github.com/MilanSazdov)
-- Email: [milansazdov@gmail.com](mailto:milansazdov@gmail.com)
-- LinkedIn: [milansazdov](https://www.linkedin.com/in/milansazdov)
+- :octocat: GitHub: [MilanSazdov](https://github.com/MilanSazdov)
+- 📧 Email: [milansazdov@gmail.com](mailto:milansazdov@gmail.com)
+- 📮 LinkedIn: [milansazdov](https://www.linkedin.com/in/milansazdov)
