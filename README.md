@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/Language-Python-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-## Project Description
+## 📌 Project Description
 
 This project presents the implementation of a Genetic Algorithm (GA) designed to solve a "black-box" optimization problem. The primary challenge is to find the global minimum of a given objective function, $f(w)$, whose analytical form is unknown. The function operates on a high-dimensional input vector, **w**, defined in a 60-dimensional space. Interaction with the function is restricted to a computational interface that provides an output value for a given input vector.
 
@@ -32,7 +32,7 @@ This implementation aims to effectively balance **exploration** of the vast sear
 ├── ann_criterion.py
 └── README.md
 ```
-## Table of Contents
+## 📚 Table of Contents
 - [Project Description](#project-description)
 - [Key Features](#key-features)
 - [File Structure](#file-structure)
@@ -159,7 +159,7 @@ The algorithm's parameters were empirically tuned to achieve a robust balance be
 | `elitism_count` | 3 | Preserves the 3 best-found solutions in each generation. |
 | `stagnation_limit` | 15 | An early stopping criterion to save computational resources if no improvement is found. |
 
-## Results and Convergence
+## 📊 Results and Convergence
 
 The algorithm was run multiple times to test for consistency. The results demonstrate high robustness, with the final objective value consistently converging to a narrow range between **0.024** and **0.031**. The best solution found across all test runs was **$f_{min}(w) = 0.02396133$**. This consistency suggests that the algorithm reliably finds the same high-quality region of the search space.
 
