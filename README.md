@@ -32,6 +32,22 @@ This implementation aims to effectively balance **exploration** of the vast sear
 ├── ann_criterion.py
 └── README.md
 ```
+## Table of Contents
+- [Project Description](#project-description)
+- [Key Features](#key-features)
+- [File Structure](#file-structure)
+- [Requirements & Installation](#requirements--installation)
+- [How to Run](#how-to-run)
+- [Algorithm Architecture and Implementation Details](#algorithm-architecture-and-implementation-details)
+  - [Individual Representation](#individual-representation)
+  - [Initial Population](#initial-population)
+  - [Fitness Function](#fitness-function)
+  - [Selection Strategy](#selection-strategy)
+  - [Crossover Operator: Simulated Binary Crossover (SBX)](#crossover-operator-simulated-binary-crossover-sbx)
+  - [Mutation Operator: Polynomial Mutation](#mutation-operator-polynomial-mutation)
+- [Hyperparameter Tuning](#hyperparameter-tuning)
+- [Results and Convergence](#results-and-convergence)
+- [Conclusion](#conclusion)
 
 ## Requirements & Installation
 
