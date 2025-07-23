@@ -139,7 +139,7 @@ class GeneticAlgorithm:
                     else:
                         beta = (1.0 / (2.0 * (1.0 - u))) ** (1.0 / (self.crossover_eta + 1.0))
 
-                    # Use SBX for generating genes of childrens
+                    # Use SBX for generating genes of children
                     c1_j = 0.5 * (((1 + beta) * p1[j]) + ((1 - beta) * p2[j]))
                     c2_j = 0.5 * (((1 - beta) * p1[j]) + ((1 + beta) * p2[j]))
 
