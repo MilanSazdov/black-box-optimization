@@ -11,7 +11,7 @@ This setup precludes the use of traditional gradient-based optimization methods.
 
 This implementation aims to effectively balance **exploration** of the vast search space with **exploitation** of promising regions to reliably converge to a high-quality solution.
 
-## Key Features
+## ✨ Key Features
 
 - **Object-Oriented Design:** The entire algorithm is encapsulated in a modular and reusable `GeneticAlgorithm` class in Python.
 - **Advanced Operators:** Implements sophisticated operators for real-coded problems:
@@ -21,7 +21,7 @@ This implementation aims to effectively balance **exploration** of the vast sear
 - **Dynamic Adaptation:** Features a dynamic adaptation mechanism for mutation strength, which decreases over generations for a better balance between initial exploration and final fine-tuning.
 - **Performance Visualization:** Generates plots for convergence analysis (best and average fitness) and population diversity.
 
-## File Structure
+## 📁 File Structure
 
 ```
 .
@@ -49,7 +49,7 @@ This implementation aims to effectively balance **exploration** of the vast sear
 - [Results and Convergence](#results-and-convergence)
 - [Conclusion](#conclusion)
 
-## Requirements & Installation
+## 🛠️ Requirements & Installation
 
 The project requires Python 3 and the following libraries:
 - `numpy`
@@ -60,7 +60,7 @@ You can install them using pip:
 python -m pip install numpy matplotlib
 ```
 
-## How to Run
+## ▶️ How to Run
 
 To run the optimization process, simply execute the main script from your terminal:
 ```bash
@@ -68,7 +68,7 @@ python genetic_algorithm.py
 ```
 The script will print the progress to the console and display the result plots upon completion.
 
-## Algorithm Architecture and Implementation Details
+## 🏗️ Algorithm Architecture and Implementation Details
 
 ### Individual Representation
 An individual in the GA represents a potential solution to the problem, i.e., a specific vector **w**. It is implemented as a 60-element NumPy array, where each element (gene) is a real number corresponding to a dimension of the input vector.
@@ -143,7 +143,7 @@ The entire process revolves around calculating the perturbation factor $δ_q$. B
 
 Finally, after the new value $y'$ is calculated, a check is performed using `numpy.clip` to ensure the value remains strictly within its defined bounds.
 
-## Hyperparameter Tuning
+## 🎛️ Hyperparameter Tuning
 
 The algorithm's parameters were empirically tuned to achieve a robust balance between exploration and exploitation for this specific problem.
 
@@ -171,6 +171,6 @@ The typical behavior of the algorithm is shown in the convergence and diversity 
 ![Diversity Plot](assets/ga_diversity.png)
 *Figure 2: A plot showing population diversity (measured by standard deviation) over generations.*
 
-## Conclusion
+## ✅ Conclusion
 
 The implemented Genetic Algorithm proved to be a successful and efficient method for solving the given high-dimensional "black-box" optimization problem. Through a carefully designed architecture using advanced operators and dynamic parameter adaptation, the algorithm demonstrated robust and consistent convergence to high-quality solutions. This project successfully showcases the power and flexibility of Genetic Algorithms in tackling complex optimization challenges where traditional methods are not applicable.
