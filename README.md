@@ -138,7 +138,7 @@ The algorithm's parameters were empirically tuned to achieve a robust balance be
 | `crossover_rate` | 0.9 | A high rate to prioritize the combination of successful solutions. |
 | `crossover_eta` | 5 | A low `eta` value encourages exploration by creating more diverse offspring. |
 | `mutation_rate` | 0.04 | A slightly elevated rate ensures a steady influx of new genetic material to prevent stagnation. |
-| `mutation_eta_schedule`| (5, 50) | Starts with explorative mutations (low `eta`) and transitions to fine-tuning (high `eta`). |
+| `mutation_eta_schedule`| (5,50) | Starts with explorative mutations (low `eta`) and transitions to fine-tuning (high `eta`). |
 | `selection_k` | 3 | A standard tournament size that provides moderate and stable selection pressure. |
 | `elitism_count` | 3 | Preserves the 3 best-found solutions in each generation. |
 | `stagnation_limit` | 15 | An early stopping criterion to save computational resources if no improvement is found. |
@@ -149,10 +149,10 @@ The algorithm was run multiple times to test for consistency. The results demons
 
 The typical behavior of the algorithm is shown in the convergence and diversity plots below.
 
-![Convergence Plot](assets/slika1.png)
+![Convergence Plot](assets/ga_result.png)
 *Figure 1: A convergence plot showing the best and average fitness per generation.*
 
-![Diversity Plot](assets/slika2.png)
+![Diversity Plot](assets/diversity.png)
 *Figure 2: A plot showing population diversity (measured by standard deviation) over generations.*
 
 ## Conclusion
