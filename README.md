@@ -33,21 +33,24 @@ This implementation aims to effectively balance **exploration** of the vast sear
 └── README.md
 ```
 ## 📚 Table of Contents
-- [Project Description](#project-description)
-- [Key Features](#key-features)
-- [File Structure](#file-structure)
-- [Requirements & Installation](#requirements--installation)
-- [How to Run](#how-to-run)
-- [Algorithm Architecture and Implementation Details](#algorithm-architecture-and-implementation-details)
+- [Project Description](#-project-description)
+- [Key Features](#-key-features)
+- [File Structure](#-file-structure)
+- [Requirements & Installation](#-requirements--installation)
+- [How to Run](#-how-to-run)
+- [Algorithm Architecture and Implementation Details](#-algorithm-architecture-and-implementation-details)
   - [Individual Representation](#individual-representation)
   - [Initial Population](#initial-population)
   - [Fitness Function](#fitness-function)
   - [Selection Strategy](#selection-strategy)
   - [Crossover Operator: Simulated Binary Crossover (SBX)](#crossover-operator-simulated-binary-crossover-sbx)
   - [Mutation Operator: Polynomial Mutation](#mutation-operator-polynomial-mutation)
-- [Hyperparameter Tuning](#hyperparameter-tuning)
-- [Results and Convergence](#results-and-convergence)
-- [Conclusion](#conclusion)
+- [Hyperparameter Tuning](#-hyperparameter-tuning)
+- [Results and Convergence](#-results-and-convergence)
+- [Conclusion](#-conclusion)
+- [Contact](#-contact)
+- [License](LICENSE)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
 
 ## 🛠️ Requirements & Installation
 
@@ -174,3 +177,9 @@ The typical behavior of the algorithm is shown in the convergence and diversity 
 ## ✅ Conclusion
 
 The implemented Genetic Algorithm proved to be a successful and efficient method for solving the given high-dimensional "black-box" optimization problem. Through a carefully designed architecture using advanced operators and dynamic parameter adaptation, the algorithm demonstrated robust and consistent convergence to high-quality solutions. This project successfully showcases the power and flexibility of Genetic Algorithms in tackling complex optimization challenges where traditional methods are not applicable.
+
+## 📬 Contact
+
+- GitHub: [MilanSazdov](https://github.com/MilanSazdov)
+- Email: [milansazdov@gmail.com](mailto:milansazdov@gmail.com)
+- LinkedIn: [milansazdov](https://www.linkedin.com/in/milansazdov)
