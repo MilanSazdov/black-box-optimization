@@ -11,6 +11,15 @@ This setup precludes the use of traditional gradient-based optimization methods.
 
 This implementation aims to effectively balance **exploration** of the vast search space with **exploitation** of promising regions to reliably converge to a high-quality solution.
 
+---
+
+## 👥 Authors
+
+- [**Milan Sazdov**](https://github.com/MilanSazdov)  
+- [**Lazar Sazdov**](https://github.com/LazarSazdov)
+  
+---
+
 ## ✨ Key Features
 
 - **Object-Oriented Design:** The entire algorithm is encapsulated in a modular and reusable `GeneticAlgorithm` class in Python.
@@ -20,6 +29,8 @@ This implementation aims to effectively balance **exploration** of the vast sear
   - **Mutation:** Polynomial Mutation.
 - **Dynamic Adaptation:** Features a dynamic adaptation mechanism for mutation strength, which decreases over generations for a better balance between initial exploration and final fine-tuning.
 - **Performance Visualization:** Generates plots for convergence analysis (best and average fitness) and population diversity.
+
+---
 
 ## 📁 File Structure
 
@@ -32,6 +43,9 @@ This implementation aims to effectively balance **exploration** of the vast sear
 ├── ann_criterion.py
 └── README.md
 ```
+
+---
+
 ## 📚 Table of Contents
 - [Project Description](#-project-description)
 - [Key Features](#-key-features)
@@ -52,6 +66,8 @@ This implementation aims to effectively balance **exploration** of the vast sear
 - [License](LICENSE)
 - [Code of Conduct](CODE_OF_CONDUCT.md)
 
+---
+
 ## 🔧 Requirements & Installation
 
 The project requires Python 3 and the following libraries:
@@ -63,6 +79,8 @@ You can install them using pip:
 python -m pip install numpy matplotlib
 ```
 
+---
+
 ## ⏩ How to Run
 
 To run the optimization process, simply execute the main script from your terminal:
@@ -70,6 +88,8 @@ To run the optimization process, simply execute the main script from your termin
 python genetic_algorithm.py
 ```
 The script will print the progress to the console and display the result plots upon completion.
+
+---
 
 ## 📑 Algorithm Architecture and Implementation Details
 
@@ -146,6 +166,8 @@ The entire process revolves around calculating the perturbation factor $δ_q$. B
 
 Finally, after the new value $y'$ is calculated, a check is performed using `numpy.clip` to ensure the value remains strictly within its defined bounds.
 
+---
+
 ## 📜 Hyperparameter Tuning
 
 The algorithm's parameters were empirically tuned to achieve a robust balance between exploration and exploitation for this specific problem.
@@ -162,6 +184,8 @@ The algorithm's parameters were empirically tuned to achieve a robust balance be
 | `elitism_count` | 3 | Preserves the 3 best-found solutions in each generation. |
 | `stagnation_limit` | 15 | An early stopping criterion to save computational resources if no improvement is found. |
 
+---
+
 ## 📈 Results and Convergence
 
 The algorithm was run multiple times to test for consistency. The results demonstrate high robustness, with the final objective value consistently converging to a narrow range between **0.024** and **0.031**. The best solution found across all test runs was **$f_{min}(w) = 0.02396133$**. This consistency suggests that the algorithm reliably finds the same high-quality region of the search space.
@@ -174,12 +198,16 @@ The typical behavior of the algorithm is shown in the convergence and diversity 
 ![Diversity Plot](assets/ga_diversity.png)
 *Figure 2: A plot showing population diversity (measured by standard deviation) over generations.*
 
+---
+
 ## ✅ Conclusion
 
 The implemented Genetic Algorithm proved to be a successful and efficient method for solving the given high-dimensional "black-box" optimization problem. Through a carefully designed architecture using advanced operators and dynamic parameter adaptation, the algorithm demonstrated robust and consistent convergence to high-quality solutions. This project successfully showcases the power and flexibility of Genetic Algorithms in tackling complex optimization challenges where traditional methods are not applicable.
 
+---
+
 ## 📬 Contact
 
-- :octocat: GitHub: [MilanSazdov](https://github.com/MilanSazdov)
+- :octocat: GitHub: [MilanSazdov](https://github.com/MilanSazdov) ; [LazarSazdov](https://github.com/LazarSazdov)
 - 📧 Email: [milansazdov@gmail.com](mailto:milansazdov@gmail.com)
-- 📮 LinkedIn: [milansazdov](https://www.linkedin.com/in/milansazdov)
+- 📮 LinkedIn: [milansazdov](https://www.linkedin.com/in/milansazdov) ; [lazarsazdov](https://www.linkedin.com/in/lazar-sazdov-3971b136a/)
